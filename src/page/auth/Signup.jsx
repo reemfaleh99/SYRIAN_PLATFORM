@@ -11,7 +11,7 @@ const Signup = () => {
       <h3 className='text-3xl font-bold '>انشاء حساب جديد</h3>
       <p className='text-gray-500 font-semibold' >هل لديك حساب على المنصة السورية؟       <Link to="/login"><span className='text-babyBlue'>سجل دخولك</span></Link>
 </p>
-      <div className='flex gap-5'>
+      <div className='flex gap-5 flex-col md:flex-row'>
         <div className='bg-white rounded-full border-gray-300 border-[1px] flex items-center gap-2 py-3 px-6'>
             <GrGoogle className='w-6 h-6'/>
             <span className='text-md font-medium'>انشاء حساب عبر جوجل</span>
