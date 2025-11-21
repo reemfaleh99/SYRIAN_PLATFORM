@@ -6,7 +6,7 @@ import Signup from "./page/auth/Signup"
 function App() {
 
   return (
-      <div className="h-screen bg-linear-to-b from-blue-100 to-white">
+      <div className="h-screen font-cairo">
           <Layout/>
         </div>
   )

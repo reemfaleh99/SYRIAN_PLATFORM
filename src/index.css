@@ -1,4 +1,8 @@
 @import "tailwindcss";
 @theme{
-    --color-babyBlue:#6dcde5
+    --color-babyBlue:#6dcde5;
+    --color-darkBlue:#306B89;
+    --color-blackBlue: #04181C;
+      --font-cairo: "Cairo", sans-serif;
+
 }
