@@ -4,6 +4,7 @@ import logo from "../assets/Logo-Syrian-Platform.png"
 import { FaEarthAsia } from 'react-icons/fa6'
 import { AiOutlineMenu } from 'react-icons/ai'
 import MobileNav from './MobileNav'
+import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
          <ul className='lg:flex gap-3 xl:gap-5 hidden'>
          <li>الرئيسية</li> 
         <li>الكورسات</li>
-        <li>المنتدى</li>
+        <NavLink to="/forum"><li>المنتدى</li></NavLink>
         <li>المشاريع</li>
         <li>اتصل بنا</li>
       </ul>
