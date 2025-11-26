@@ -5,6 +5,33 @@ import Cards from './Cards';
 import Title from './Title';
 import Button from './Button';
 
+const coursesCards = [
+  {
+    id:"0",
+    img:"https://picsum.photos/300/200",
+    title:"كورس تصميم UI UX للتطبيقات والمواقع الإلكترونية",
+    student:1700,
+    stars:4.5,
+    hours:27,
+    },
+  {
+    id:"1",
+    img:"https://picsum.photos/300/200",
+    title:"كورس تصميم UI UX للتطبيقات والمواقع الإلكترونية",
+    student:1700,
+    stars:4.5,
+    hours:27,
+    },
+  {
+    id:"2",
+    img:"https://picsum.photos/300/200",
+    title:"كورس تصميم UI UX للتطبيقات والمواقع الإلكترونية",
+    student:1700,
+    stars:4.5,
+    hours:27,
+    },
+]
+
 const Courses = () => {
       const categories = [
     { label: "اللغات", value: "lang" },
@@ -27,15 +54,22 @@ const Courses = () => {
         onSelect={handleSelect}
       />
     </div>
-    <Cards 
-     image="https://picsum.photos/300/200"
-        title="كورس تصميم UI UX للتطبيقات والمواقع الإلكترونية"
-        students={1700}
-        stars={4.5}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-18 gap-6 mb-10">
+       {
+      coursesCards.map((item=>(
+        <Cards 
+     image={item.img}
+        title={item.title}
+        students={item.student}
+        stars={item.stars}
         btn="عرض الكورس"
-        hours={27}
+        hours={item.hours}
         border="border border-babyBlue"
         />
+      )))
+    }
+    </div>
+   
     <Button bg="darkBlue" text="white" mx="auto" title="عرض جميع الكورسات"/>
     </div>
   )

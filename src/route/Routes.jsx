@@ -7,6 +7,9 @@ import Signup from "../page/auth/Signup";
 import MakeNewPassword from "../page/auth/MakeNewPassword";
 import ForgetPassword from "../page/auth/ForgetPassword";
 import Home from "../page/Home";
+import Forum from "../page/Forum";
+import AddPost from "../page/AddPost";
+import PostDetails from "../page/PostDetails";
 
 const Routers = () => {
   return (
@@ -16,6 +19,9 @@ const Routers = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/make-new" element={<MakeNewPassword />} />
       <Route path="/forget-pass" element={<ForgetPassword />} />
+      <Route path="/forum" element={<Forum/>}/>
+      <Route path="/forum/add-post" element={<AddPost/>}/>
+      <Route path="/post-details" element={<PostDetails/>}/>
     </Routes>
   );
 };

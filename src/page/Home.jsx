@@ -9,7 +9,7 @@ import News from '../components/News'
 
 const Home = () => {
   return (
-    <div>
+    <div >
         <Header/>
         <Courses/>
         <WhyUs/>
