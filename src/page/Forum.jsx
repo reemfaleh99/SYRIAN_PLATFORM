@@ -6,7 +6,7 @@ import LatestArticles from '../components/LatestArticles'
 import ForumFilter from '../components/ForumFilter'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import { CgAdd } from 'react-icons/cg'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const newsCards = [
   {
@@ -126,7 +126,7 @@ const Forum = () => {
  <div className="w-full lg:w-2/3">
   <div className="columns-1 md:columns-2  gap-6 space-y-6">
     {newsCards.map((item) => (
-      <div key={item.id} className="break-inside-avoid mb-6">
+      <Link to="/post-details"  key={item.id} className="break-inside-avoid mb-6">
         <Cards
           date={item.date}
           comments={item.comment}
@@ -136,7 +136,7 @@ const Forum = () => {
           btn="عرض المنشور"
           border="border border-gray-300"
         />
-      </div>
+      </Link >
     ))}
   </div>
 </div>
